@@ -13,6 +13,7 @@ function App() {
   const [choosenProduct, setChoosenProduct] = useState(null);
 
   const handleModal = () => {
+    console.log(isModalOpen);
     setIsModalOpen((prev) => !prev);
   };
 
