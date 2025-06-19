@@ -8,7 +8,6 @@ export default function Button({
   children,
   onClick,
 }) {
-  console.log(onClick);
   return (
     <>
       {link ? (

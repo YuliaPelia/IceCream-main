@@ -15,7 +15,7 @@ function App() {
   const handleModal = () => {
     console.log(isModalOpen);
     console.log(choosenProduct);
-    setIsModalOpen((prev) => !prev);
+    setIsModalOpen(true);
   };
 
   const selectProduct = (elem) => {
