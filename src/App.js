@@ -14,6 +14,7 @@ function App() {
 
   const handleModal = () => {
     console.log(isModalOpen);
+    console.log(choosenProduct);
     setIsModalOpen((prev) => !prev);
   };
 
@@ -33,7 +34,7 @@ function App() {
         data={products}
       />
       <HowItIsMade />
-      {isModalOpen === true && (
+      {isModalOpen && (
         <Modal
           resetSelectedProduct={resetSelectedProduct}
           handleModal={handleModal}
